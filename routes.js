@@ -8,7 +8,7 @@ const authCheck = jwt({
 
 module.exports = function(app) {
 
-  app.get('/api', authCheck, function(req, res) {
+  app.get('/api', function(req, res) {
     res.json("Welcome to the Api");
   });
 
