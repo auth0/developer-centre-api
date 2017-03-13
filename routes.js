@@ -9,7 +9,7 @@ const authCheck = jwt({
 module.exports = function(app) {
 
   app.get('/api', function(req, res) {
-    res.json("Welcome to the Api");
+    res.json("Welcome to the Developer Centre Api");
   });
 
   // app.post('/api/login',    User.authenticateUserByEmail);
