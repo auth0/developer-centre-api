@@ -12,10 +12,8 @@ module.exports = function(app) {
     res.json("Welcome to the Developer Centre Api");
   });
 
-  app.get('/api/clients',  Client.getClients);
-  // app.get('/api/user/:user_id',    User.getEachUserDetails);
-  // app.get('/api/users/:username',  User.getEachUserByUsername);
-  // app.put('/api/user/:user_id',    User.updateEachUserDetails);
+  app.get('/api/clients', Client.getClients);
+ 
   app.delete('/api/client/:client_id', Client.deleteClient);
 
   app.post('/api/client', Client.create);

@@ -17,8 +17,6 @@ module.exports = {
 
     async.waterfall([
       function(cb) {
-
-        
         const options = { 
           method: 'POST',
           url: `https://${process.env.AUTH0_DOMAIN}/oidc/register`,
